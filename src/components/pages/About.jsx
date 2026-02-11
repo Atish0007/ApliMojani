@@ -8,7 +8,7 @@
                 <div className="row justify-content-center">
                     <div className="col-12">
 
-                        <h1 className="MainHeading text-center pt-5">Apli Mojani म्हणजे काय?</h1>
+                        <h1 className="MainHeading text-center pt-5"><span className="cstEngFont fw-bold">Apli Mojani</span> म्हणजे काय?</h1>
                         
                             <div className="bar">
                                 <div className="bar-fill"></div>
@@ -21,7 +21,7 @@
                             </div>
                             <div className="col-12 col-lg-6 col-xl-7">
 
-                                <h5>Apli Mojani ही नागरिकांसाठी असलेली सहाय्य सेवा आहे जी
+                                <h5><span className="cstEngFont fw-bold">Apli Mojani</span> ही नागरिकांसाठी असलेली सहाय्य सेवा आहे जी
                                     शासकीय मोजणी अर्ज प्रक्रिया समजून घेणे व योग्य अर्ज भरण्यास मदत करते.
                                 </h5>
 

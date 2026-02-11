@@ -31,7 +31,7 @@ function Process() {
                                         className=" mb-3"
                                         width={i === steps.length - 1 ? 130 : 170} 
                                     />
-                                    <h6 className="fs-2 fw-bold">{item.title}</h6>
+                                    <h6 className="fs-3 fw-bold">{item.title}</h6>
                                     <p className="fs-6 small text-muted">
                                         {item.subtitle}
                                     </p>

@@ -132,9 +132,9 @@ function Sevashetra() {
                                             <div className="price-badge">₹300 शुल्क</div>
 
                                             <ul className="feature-list">
-                                                <li>✔ थेट संपर्क - दलाल नाही</li>
-                                                <li>✔ संपूर्ण मार्गदर्शन</li>
-                                                <li>✔ Receipt दिली जाईल</li>
+                                                <li><span className='text-success'>✔</span> थेट संपर्क - दलाल नाही</li>
+                                                <li><span className='text-success'>✔</span> संपूर्ण मार्गदर्शन</li>
+                                                <li><span className='text-success'>✔</span> Receipt दिली जाईल</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -152,9 +152,9 @@ function Sevashetra() {
                                             <div className="price-badge secure">सुरक्षित सेवा</div>
 
                                             <ul className="feature-list">
-                                                <li>✔ सरकारी प्रमाणित सेवा</li>
-                                                <li>✔ त्वरित प्रतिसाद</li>
-                                                <li>✔ डेटा सुरक्षितता</li>
+                                                <li><span className='text-success'>✔</span> सरकारी प्रमाणित सेवा</li>
+                                                <li><span className='text-success'>✔</span> त्वरित प्रतिसाद</li>
+                                                <li><span className='text-success'>✔</span> डेटा सुरक्षितता</li>
                                             </ul>
                                         </div>
                                     </div>
