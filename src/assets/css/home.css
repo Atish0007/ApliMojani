@@ -1,0 +1,55 @@
+.homeBG{
+    background-image: url(../../assets/images/apli_mojaniBG.png);
+    background-size: cover;
+    background-position: 20% 70%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.brandWrap {
+  display: inline-block;          
+  text-align: center;
+}
+.homeHeading{
+    color: #00409d;
+    font-weight: 600;
+}
+.fulimg {
+  height: 65px;
+  /* transform: rotate(25deg); */
+  margin-bottom: 5px;
+}
+.hmheadful {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  
+}
+.hmbar{
+    position: relative;
+}
+.hmbar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;                     
+  border-bottom: 2px solid #dcdcdc; 
+}
+
+.tagline {
+  margin-top: 15px;
+}
+
+.btns button {
+  margin: 10px;
+  padding: 10px 15px;
+  border: none !important;
+  color: white;
+  border-radius: 5px;
+}
+.green {background:#25d366;}
+.blue {background:#1976d2;}
+.dark {background:#333;}

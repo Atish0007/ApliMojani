@@ -1,0 +1,164 @@
+
+.premium-wrapper {
+  background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Left info box */
+.info-box,
+.map-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  transition: 0.4s ease;
+  height: 100%;
+  border-left: 5px solid #c9a227;
+}
+
+.map-box {
+  border-left: 5px solid #1e3c72;
+}
+
+.info-box:hover,
+.map-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+}
+
+.info-box .border {
+  background: linear-gradient(45deg, #f4f9ff, #ffffff);
+  border: 1px solid #dde6f1 !important;
+}
+
+
+/* Play store + phone strip */
+.download-strip {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ background: linear-gradient(90deg, #1e3c72, #2a5298);
+ padding: 0px;
+ border-radius: 10px;
+}
+/* .download-strip {
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  border-radius: 14px;
+  padding: 15px;
+  box-shadow: 0 10px 25px rgba(30, 60, 114, 0.4);
+  transition: 0.3s;
+} */
+
+.download-strip:hover {
+  transform: scale(1.02);
+}
+
+
+
+
+/* Second Row 2 boxes */
+.premium-section {
+  background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+}
+
+/* Main Card */
+.premium-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.4s ease;
+  height: 100%;
+}
+
+.premium-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Left Accent Strip */
+.accent-strip {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(to bottom, #c9a227, #f4d03f);
+}
+
+.accent-strip.blue {
+  background: linear-gradient(to bottom, #1e3c72, #2a5298);
+}
+
+.card-content {
+  padding: 30px;
+}
+
+/* Titles */
+.title {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.phone {
+  font-weight: 800;
+  font-size: 28px;
+  color: #1e3c72;
+}
+
+.timing {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Badge */
+.price-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #f4d03f, #c9a227);
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #000;
+}
+
+.price-badge.secure {
+  background: linear-gradient(45deg, #28a745, #5cd65c);
+  color: #fff;
+}
+
+/* Features */
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #444;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.feature-list li:hover {
+  transform: translateX(6px);
+  color: #1e3c72;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card-content {
+    padding: 20px;
+  }
+
+  .phone {
+    font-size: 22px;
+  }
+}

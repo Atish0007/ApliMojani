@@ -1,0 +1,113 @@
+/* .service-btn {
+  width: 100%;
+  border-radius: 25px !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+}
+
+.service-btn:hover {
+  background-color: #0d6efd;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(13,110,253,0.3);
+}
+
+.service-card {
+  padding: 10px;
+  border-radius: 14px !important;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.service-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+ */
+
+
+.services-section {
+  background: #f5f7fa;
+}
+
+.service-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+.service-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.12),
+    rgba(255,255,255,0)
+  );
+  pointer-events: none;
+}
+
+.service-card img {
+  width: 60px;
+  height: 60px;
+  /* filter: brightness(0) invert(1); */
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* Colors */
+/* BLUE – मोजणी (तोलणी) अर्ज */
+.blue {
+  background: linear-gradient(135deg, #1f5fae 0%, #0d3c78 100%);
+}
+
+/* YELLOW – 7/12 – 8A काढणी */
+.yellow {
+  background: linear-gradient(135deg, #f4b21b 0%, #e09200 100%);
+}
+
+/* GREEN – केअरकार अर्ज */
+.green {
+  background: linear-gradient(135deg, #2e8b57 0%, #1f6b45 100%);
+}
+
+/* PURPLE / INDIGO – कायदेशीर सल्ला */
+.purple {
+  background: linear-gradient(135deg, #4b4bbd 0%, #2f2f8f 100%);
+}
+
+/* RED – कायदेशीर सल्ला मार्गदर्शन */
+.red {
+  background: linear-gradient(135deg, #e1463f 0%, #b7312b 100%);
+}
+
+/* DARK GREY – Sale Deed / Registry */
+.dark {
+  background: linear-gradient(135deg, #4a4f55 0%, #2c2f33 100%);
+}

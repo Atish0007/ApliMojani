@@ -1,0 +1,168 @@
+
+.header-bg{
+   background-color: rgb(250, 250, 252);
+   font-size:12px;
+}
+
+.navbar-bg {
+  position: relative;
+  width: 100%;
+  background-color: #1F7AA5;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform: translateY(0) !important;
+}
+
+
+/* .navbar-nav-mob {
+  align-items: center;
+}
+
+.navbar-nav-mob .nav-item-mob {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav-mob .nav-item-mob:not(:last-child)::after {
+  content: "|";
+  color: #fff;        
+  margin: 0 14px;      
+  font-weight: 300;
+} */
+
+
+/* sticky base (hidden first) */
+.sticky-nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: #1F7AA5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transform: translateY(-100%) !important;
+}
+
+/* when active → slide down */
+.sticky-nav:not(.sticky-hide) {
+  transform: translateY(0) !important;
+  animation: fadeInOpacity 0.5s ease-in forwards;
+}
+
+/* hide on scroll up */
+.sticky-nav.sticky-hide {
+  transform: translateY(-100%) !important;
+  animation: fadeOutOpacity 0.5s ease-in forwards;
+}
+
+
+
+/* Animations */
+.fade-left-anim {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.8s ease;
+}
+  
+.fade-left-anim.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-right-anim {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-right-anim.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: fadeLeft 2s forwards;
+}
+
+.fade-right {
+    opacity: 0;
+    transform: translateX(30px);
+    animation: fadeRight 2s forwards;
+}
+
+@keyframes fadeLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes fadeInOpacity {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOutOpacity {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animated-label {
+    animation: fadeInUp 0.8s ease-in-out;
+    display: inline-block;
+  }
+
+
+
+  @media (min-width: 992px) {
+  .offcanvas {
+    width: 280px;
+  }
+
+  .offcanvas .nav-link {
+    padding: 12px 8px;
+    font-size: 1.05rem;
+  }
+}
+
+.aplimojani-brand svg {
+  max-width: 180px;
+  height: 50px;;
+}
+
+.cstmSideBarColr{
+    background-color: #031530 !important;
+}
+.btn-close{
+    opacity:unset !important;
+}
+
+.offcanvas {
+  transition: transform 0.35s ease-in-out;
+}
+@media (min-width: 992px) {
+  #desktopSidebar {
+    width: 300px;
+  }
+}
+
