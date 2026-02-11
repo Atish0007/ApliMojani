@@ -1,0 +1,66 @@
+.footer-strip {
+  background: linear-gradient(180deg, #0d3c75, #0a2f5a);
+  padding: 25px 0;
+  color: #fff;
+}
+
+.strip-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.strip-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-4px);
+  filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 1.08));
+  cursor: pointer;
+}
+
+.strip-icon {
+  font-size: 28px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.footerIcon{
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.strip-icon.ftrPhone{
+  color: #00b0ff;
+}
+.strip-icon.whatsapp {
+  color: #26eb6f;
+}
+.strip-icon.ftrMap{
+  color: #EA4335;
+}
+.strip-icon.ftrForm{
+  color: #e3c900;
+}
+
+.strip-item h6 {
+  font-weight: 600;
+  margin: 0;
+}
+
+.strip-item p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* Mobile improvements */
+@media (max-width: 767px) {
+  .strip-item {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+}

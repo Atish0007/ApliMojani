@@ -86,8 +86,7 @@ function Sevashetra() {
                                         <div className="d-flex flex-column flex-md-row align-items-center justify-content-start text-center text-md-center mb-3">
                                             <img
                                                 src={map}
-                                                width="200"
-                                                className="me-2"
+                                                className="sevaImg me-2"
                                                 alt="India Map"
                                             />
                                             <p className="text-center">
@@ -102,11 +101,12 @@ function Sevashetra() {
                                                 <div className="col-12 col-md-auto mb-0">
                                                     <img
                                                         src={google}
+                                                        className="GPImage"
                                                         height="60"
                                                         alt="Google Play"
                                                     />
                                                 </div>
-                                                <div className="col-12 col-md-auto mt-3">
+                                                <div className="col-12 col-md-auto mt-3 mt-md-0">
                                                     <span className="fw-bold text-white fs-1">
                                                         80102 80102
                                                     </span>

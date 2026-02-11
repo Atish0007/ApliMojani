@@ -8,7 +8,7 @@
                 <div className="row justify-content-center">
                     <div className="col-12">
 
-                        <h1 className="MainHeading text-center pt-5"><span className="cstEngFont fw-bold">Apli Mojani</span> म्हणजे काय?</h1>
+                        <h1 className="MainHeading text-center pt-5"><span className="cstEngFont fw-bold">Apli Mojani</span> म्हणजे काय ?</h1>
                         
                             <div className="bar">
                                 <div className="bar-fill"></div>

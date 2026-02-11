@@ -53,3 +53,11 @@
 .green {background:#25d366;}
 .blue {background:#1976d2;}
 .dark {background:#333;}
+
+
+@media (max-width: 768px) {
+  .homeBG {
+    background-position: 80% 50% !important;
+  }
+}
+ 

@@ -1,8 +1,8 @@
 import "../../assets/css/whoapply.css"
-import farmer from "../../assets/images/whyapply/farmer.png";
+import farmer from "../../assets/images/whyapply/farmer.svg";
 import flatOwner from "../../assets/images/whyapply/flat_owner.png";
 import nominee from "../../assets/images/whyapply/nominee.png";
-import law from "../../assets/images/whyapply/law.png";
+import law from "../../assets/images/whyapply/law.svg";
 import dispute from "../../assets/images/whyapply/dispute.png";
 import loanSale from "../../assets/images/whyapply/loan_sale.png";
 
@@ -23,7 +23,7 @@ const list = [
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-12">
-                            <h1 className="MainHeading text-center pt-5">कोण अर्ज करू शकतो?</h1>
+                            <h1 className="MainHeading text-center pt-5">कोण अर्ज करू शकतो ?</h1>
                              <div className="bar">
                                 <div className="bar-fill"></div>
                             </div>
