@@ -42,7 +42,7 @@ function Home(){
 
                             {/* ===== SLIDE 1 : Aapli Mojani ===== */}
                             <div className="carousel-item active">
-                                        <h1 className="homeHeading hmheadful hmbar">
+                                        <h1 className="homeHeading hmheadful hmbar pt-2 pt-md-0">
                                             <img className="mojaniLG" src={mojaniLG} alt="ApliMojani" />
                                             <span className="MainHeading cstEngFont AapliMojaniText F60">
                                             Aapli Mojani
@@ -65,23 +65,23 @@ function Home(){
                                             <span className="text-success">✔</span> Citizen Assistance Service |{" "}
                                             <span className="text-success">✔</span> Maharashtra Wide
                                         </small>
-                            </div>
+                            </div> 
 
                             {/* ===== SLIDE 2 : PM Awas Yojana ===== */}
-                            {/* <div className="carousel-item">
-                                    <h1 className="MainHeading hmbar">
+                             <div className="carousel-item">
+                                    <h1 className="hmbar pt-2 pt-md-0">
                                          <img className="graminLG" src={graminLG} alt="ApliMojani" />
-                                        <span className="MainHeading cstEngFont AapliMojaniText F40">प्रधानमंत्री आवास योजना – तुमच्या स्वतःच्या घराचे स्वप्न आता साकार
+                                        <span className="MainHeading cstEngFont AapliMojaniText F40 F2ndSlideMainHdng">प्रधानमंत्री आवास योजना – तुमच्या स्वतःच्या घराचे स्वप्न आता साकार
                                             </span>
                                     </h1>
 
-                                    <p className="homeHeading hmbar tagline fw-bold F25">
+                                    <p className="homeHeading hmbar tagline fw-bold F25 F2ndSlideSubHdng">
                                         ग्रामीण व शहरी लाभार्थ्यांसाठी अर्ज, पात्रता तपासणी व संपूर्ण मार्गदर्शन –
                                         <br />
                                         जलद आणि विश्वासार्ह सेवा
                                     </p>
 
-                                    <h5 className="homeHeading fw-bold F20">
+                                    <h5 className="homeHeading fw-bold F20 F2ndSlideAnudan">
                                         सरकारी अनुदान ₹1.20 लाख ते ₹2.50 लाख पर्यंत
                                     </h5>
 
@@ -89,13 +89,13 @@ function Home(){
                                             <span className="text-success">✔</span> ग्रामीण व शहरी दोन्ही योजना उपलब्ध |{" "}
                                             <span className="text-success">✔</span> अर्ज भरणे + डॉक्युमेंट चेक + फॉलोअप
                                     </small>
-                            </div> */}
+                            </div> 
 
                         </div>
                         </div>
 
 
-                        <div className="row justify-content-center mt-3">
+                        <div className="row justify-content-center mt-3 d-none d-sm-block">
                             <div className="col-12 col-md-10 col-lg-8">
                                 <div className="d-flex flex-column flex-md-row gap-2 justify-content-center m-4 m-md-0">
                                     <button className="btn btn-success cstEngFont btn-sm px-4 fs-6">

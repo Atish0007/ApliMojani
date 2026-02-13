@@ -18,7 +18,7 @@ function ArjForm() {
         <section className="cstmBG">
 
             <h1 className="MainHeading text-center pt-4">सेवा माहिती व उपलब्धता</h1>
-                        <div className="bar mb-0">
+                        <div className="bar bar mb-5 mb-md-0">
                             <div className="bar-fill"></div>
                         </div>
                 <div className="split-section">

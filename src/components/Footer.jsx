@@ -18,7 +18,7 @@ function Footer() {
 
 
                 {data.map((item,i)=>(
-                    <div className=" col-md-3 col-sm-6" key={i}>
+                    <div className="col-6 col-md-6 col-lg-3" key={i}>
                          <div className="strip-item">
                             <span className="footerIcon"><i className={item.icon}></i></span>
                             <div>

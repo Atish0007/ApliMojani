@@ -38,6 +38,8 @@
   font-size: 15px;
   font-weight: 500;
   color: #333;
+  height: 100%;
+  border-radius: 10px;
 }
 
 /* Icon */
@@ -67,5 +69,9 @@
 @media (max-width: 576px) {
   .why-card {
     padding: 20px;
+  }
+  .why-item {
+    font-size: 12px;
+    padding: 0px 0px;
   }
 }

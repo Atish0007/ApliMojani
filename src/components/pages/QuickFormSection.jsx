@@ -76,7 +76,7 @@ export default function QuickFormSection() {
                     {/* LEFT BOX */}
                     <div className="col-lg-6 col-md-6 col-12">
                         <div className="quick-info-box h-100">
-                            <h6 className="cstmColor fs-3 fw-bold mb-2 text-md-start text-center">
+                            <h6 className="cstmColor fs-3 fw-bold mb-2 text-start">
                                 आवश्यक कागदपत्रे
                             </h6>
 
@@ -90,17 +90,17 @@ export default function QuickFormSection() {
                                             height="30"
                                             className={`me-2 text-${item.color}`}
                                         />
-                                        <span className="fs-3">{item.text}</span>
+                                        <span className="fs-md-3 fs-5">{item.text}</span>
                                     </li>
                                 ))}
                             </ul>
 
-                            <div className="border rounded-3 p-3 mt-3 bg-light shadow-sm">
+                            <div className="border rounded-3 p-2 mt-3 bg-light shadow-sm">
                                 <div className="d-flex align-items-center justify-content-center justify-content-md-start text-center text-md-start">
                                     <img
                                         src={shield}
                                         alt="Shield"
-                                        width="30"
+                                        width="45"
                                         className="me-2"
                                     />
                                     <h6 className="fw-bold mb-0 fs-4">

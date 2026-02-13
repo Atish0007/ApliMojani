@@ -19,10 +19,6 @@
   display: flex;
 }
 
-/* Ensure row takes full height */
-/* .split-row {
-  min-height: 100vh;
-} */
 
 /* LEFT IMAGE */
 .image-side {
@@ -133,7 +129,7 @@
   }
 
   .form-side {
-    padding: 20px;
+    padding: unset !important;
   }
 
   .banner-wrapper-box {

@@ -35,7 +35,7 @@ export default function WhyChooseSection() {
 
                     <div className="row mt-4">
                         {mojaniList.map((item, i) => (
-                            <div className="col-lg-4 col-md-6 col-12 mb-3" key={i}>
+                            <div className="col-6 col-md-6 col-lg-4 mb-3" key={i}>
                                 <div className="why-item">
                                     <i className="fas fa-check-circle"></i>
                                     <span className="cstEngFont fw-bold fst-italic">{item}</span>

@@ -19,15 +19,15 @@ function Services(){
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-12">
-                                <h1 className="MainHeading text-center pt-5">आमच्या सेवा</h1>
-                                <div className="bar">
+                                <h1 className="MainHeading text-center pt-3 pt-md-5">आमच्या सेवा</h1>
+                                <div className="bar mb-3 mb-md-3">
                                     <div className="bar-fill"></div>
                                 </div>
 
 
-                                <div className="row py-2 mb-4 justify-content-center">
+                                <div className="row g-3 py-2 pb-0 mb-4 justify-content-center">
                                 {services.map((item, i) => (
-                                     <div className={i==0?"col-12 col-lg-3 col-md-6 col-sm-6 mt-3 mt-md-3":"col-12 col-lg-3 col-md-6 col-sm-6 mt-3 mt-md-3"} key={i} style={{ whiteSpace: "pre-line" }}>
+                                     <div className={i==0?"col-6 col-md-6 col-lg-3 mt-3 mt-md-3":"col-6 col-md-6 col-lg-3 mt-3 mt-md-3"} key={i} style={{ whiteSpace: "pre-line" }}>
                                             <a href="#" className={`service-card ${item.color}`}>
                                                 <img src={item.icon} alt={item.title} />
                                         <span className="fs-5">{item.title} </span>
