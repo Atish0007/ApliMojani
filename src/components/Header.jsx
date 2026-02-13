@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
-// import apli_mojaniLogo from "../assets/images/apli_mojaniLogo.png";
+import apli_mojaniLogo from "../assets/images/apli_mojaniLogo.png";
 import "../assets/css/header.css";
 import Offcanvas from "bootstrap/js/dist/offcanvas";
 
@@ -11,6 +11,17 @@ function Header() {
   const [hasTriggered, setHasTriggered] = useState(false);
   const offcanvasRef = useRef(null);
   const offcanvasInstance = useRef(null);
+
+
+  const handleWhatsApp = () => {
+
+    const message = `नमस्कार,\n\nमला सरकारी मोजणीसाठी अर्ज करायचा आहे.`;
+    //const message = `नमस्कार,\n\nनाव: ${//name}\nमोबाईल: ${//mobile}\n\nमला सरकारी मोजणीसाठी अर्ज करायचा आहे.`;
+
+    const whatsappUrl = `https://wa.me/917387484615?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
 
   const location = useLocation();
 
@@ -108,52 +119,19 @@ function Header() {
 
           {/* LOGO */}
           <Link className="aplimojani-brand text-decoration-none" to="/">
-            {/* <img src={apli_mojaniLogo} alt="Apli-Mojani" height="90" /> */}
-            <svg width="900" height="300" viewBox="0 0 900 300">
-                <defs>
-                    <linearGradient id="field" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#6FCF97" />
-                    <stop offset="100%" stopColor="#219653" />
-                    </linearGradient>
-                </defs>
-                <ellipse cx="230" cy="200" rx="200" ry="80" fill="url(#field)" />
-                <path d="M40 200 Q230 140 420 200" fill="#F2C94C" />
-                <rect x="300" y="150" width="45" height="40" fill="#F2994A" />
-                <polygon points="300,150 323,130 345,150" fill="#EB5757" />
-                <rect x="160" y="110" width="40" height="60" rx="6" fill="#2D9CDB" />
-                <circle cx="180" cy="135" r="7" fill="#fff" />
-                <circle cx="180" cy="135" r="3" fill="#EB5757" />
-                <rect x="170" y="170" width="20" height="25" fill="#2D9CDB" />
-                <circle cx="240" cy="120" r="22" fill="#F2C94C" />
-                <line x1="240" y1="80" x2="240" y2="60" stroke="#F2C94C" strokeWidth="4" />
-                <line x1="270" y1="90" x2="290" y2="75" stroke="#F2C94C" strokeWidth="4" />
-                <line x1="210" y1="90" x2="190" y2="75" stroke="#F2C94C" strokeWidth="4" />
-                <text
-                    x="470"
-                    y="165"
-                    fontSize="78"
-                    fontFamily="Noto Sans Devanagari, Mangal"
-                    fontWeight="700"
-                    fill="#fff"
-                    style={{'fontSize': '85px'}}
-                >
-                    आपली मोजणी
-                </text>
-                <rect x="470" y="185" width="330" height="4" fill="#0B3C8C" />
-                </svg>
-
+            <img src={apli_mojaniLogo} className="" alt="Apli-Mojani" height="90" />
           </Link>
 
     {/* TOGGLER + CALL BUTTON WRAPPER */}
-    <div className="d-flex align-items-center gap-5 ms-auto">
+    <div className="d-flex align-items-center gap-3 ms-auto"> 
 
         {/* CALL BUTTON */}
-        <a
-            href="tel:1800123"
-            className="btn btn-success btn-md d-none d-sm-inline-flex align-items-center fs-6"
+        <button type="button"
+            className="btn btn-success btn-md align-items-center px-2 px-lg-4 py-1 py-lg-2 fs-6 fs-lg-6" //d-none d-sm-inline-flex
+            onClick={handleWhatsApp}
         >
-          <i className="fa-solid fa-phone mb-1 me-1"></i> मदतीसाठी कॉल करा
-        </a>
+          <i className="fa-solid fa-phone mb-1 me-2"></i> अर्ज करा
+        </button>
 
           {/* MOBILE TOGGLER (UNCHANGED) */}
           <button
@@ -198,23 +176,23 @@ function Header() {
               </li>
 
               <li className="nav-item">
-                <Link to="/whoapply" className={isActive("/whoapply")}>अर्ज तपास</Link>
+                <Link to="/whoapply" className={isActive("/whoapply")}>अर्जदार</Link>
               </li>
 
               <li className="nav-item">
                 <Link to="/problems" className={isActive("/problems")}>समस्या</Link>
               </li>
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link to="/services" className={isActive("/services")}>सेवा</Link>
               </li>
 
               <li className="nav-item">
                 <Link to="/process" className={isActive("/process")}>प्रक्रिया</Link>
-              </li>
+              </li> */}
 
               <li className="nav-item">
-                <Link to="/contact" className={isActive("/contact")}>संपर्क</Link>
+                <Link to="/contactform" className={isActive("/contactform")}>संपर्क</Link>
               </li>
 
             </ul>
@@ -256,7 +234,7 @@ function Header() {
 
             <li className="nav-item">
               <Link to="/whoapply" className={isActive("/whoapply")} onClick={closeSidebar}>
-                अर्ज तपास
+                अर्जदार 
               </Link>
             </li>
 
@@ -266,7 +244,7 @@ function Header() {
               </Link>
             </li>
 
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link to="/services" className={isActive("/services")} onClick={closeSidebar}>
                 सेवा
               </Link>
@@ -276,10 +254,10 @@ function Header() {
               <Link to="/process" className={isActive("/process")} onClick={closeSidebar}>
                 प्रक्रिया
               </Link>
-            </li>
+            </li> */}
 
             <li className="nav-item">
-              <Link to="/contact" className={isActive("/contact")} onClick={closeSidebar}>
+              <Link to="/contactform" className={isActive("/contactform")} onClick={closeSidebar}>
                 संपर्क
               </Link>
             </li>

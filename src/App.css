@@ -7,9 +7,11 @@
 .MainHeading{
   font-weight: 800;
   font-size: 40px;
-  background: linear-gradient(90deg, #ff9933, #0a2c8f);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #1F3F6E;
+  /* background: #1F3F6E; */
+  /* background: linear-gradient(90deg, #ff9933, #0a2c8f); */
+  /* background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 .bar {
   width: 120px;

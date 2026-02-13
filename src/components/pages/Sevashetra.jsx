@@ -37,7 +37,7 @@ function Sevashetra() {
                             <div className="row g-3">
 
                                 {/* LEFT BOX */}
-                                <div className="col-md-6">
+                                {/* <div className="col-md-6">
                                     <div className="info-box h-100">
                                         <h6 className="cstmColor fs-3 fw-bold mb-2 text-md-start text-center">
                                             आवश्यक कागदपत्रे
@@ -73,10 +73,10 @@ function Sevashetra() {
                                         </div>
 
                                     </div>
-                                </div>
+                                </div> */}
 
                                 {/* RIGHT BOX */}
-                                <div className="col-md-6">
+                                {/* <div className="col-md-6">
                                     <div className="map-box h-100">
 
                                         <h6 className="cstmColor fs-3 fw-bold mb-2 text-md-start text-center">
@@ -115,7 +115,7 @@ function Sevashetra() {
                                         </div>
 
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
 
                             <div className="row g-4 pt-5">

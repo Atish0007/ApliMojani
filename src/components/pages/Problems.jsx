@@ -3,7 +3,7 @@ import "../../assets/css/problems.css";
 
 function Problems(){
     return (
-      <section className="py-5">
+      <section className="py-5 pb-0">
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-12">
@@ -51,7 +51,7 @@ function Problems(){
                             <div className="card h-80 CstmShadow p-3 mb-5 bg-white rounded text-start border-0">
                                 <div className="card-body">
                                 <h3 className="card-title fw-semibold text-success mb-4">
-                                    ✅ Apli Mojani कशी मदत करते?
+                                    ✅ Aapli Mojani कशी मदत करते?
                                 </h3>
 
                                 <ul className="list-unstyled custom-list text-success mb-0">

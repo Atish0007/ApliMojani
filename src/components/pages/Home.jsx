@@ -1,30 +1,120 @@
 import '../../assets/css/home.css';
-import ful from "../../assets/images/ful.PNG";
+import mojaniLG from "../../assets/images/mojniLG.PNG";
+import graminLG from "../../assets/images/graminLG.png"
 
 function Home(){
+
+    const handleWhatsApp = () => {
+
+    const message = `नमस्कार,\nमला सरकारी मोजणीसाठी अर्ज करायचा आहे.`;
+    //const message = `नमस्कार,\n\nनाव: ${//name}\nमोबाईल: ${//mobile}\n\nमला सरकारी मोजणीसाठी अर्ज करायचा आहे.`;
+
+    const whatsappUrl = `https://wa.me/917387484615?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, "_blank");
+  };
 
     return(
         <>
         <section className="d-flex align-items-center homeBG">
             <div className="container">
                 <div className="row justify-content-start">
-                    <div className="col-md-6 text-center">
-                        <div className="brandWrap animated-label">
+                    <div className="col-md-8 col-sm-6 text-center p-0">
+                        
+                        {/* <div className="brandWrap animated-label">
                             <h1 className="homeHeading hmheadful hmbar">
-                                <img className="fulimg" src={ful} alt="ApliMojani" />
-                                <span className='MainHeading cstEngFont'>Apli Mojani</span>
+                                <img className="fulimg" src={mojaniLG} alt="ApliMojani" />
+                                <span className='MainHeading cstEngFont AapliMojaniText'>Aapli Mojani</span>
                             </h1>
                             {/* <h1 className="homeHeading"><img src={ful} className="fulimg" alt="ApliMojani" height="60px" /> Apli Mojani</h1> */}
-                            <h2 className="homeHeading hmbar tagline">शासकीय मोजणी अर्जासाठी विश्वासार्ह सहाय्य</h2>
-                            <p className=''>शेतजमीन | प्लॉट | वडिलोपार्जित जमीन</p>
+                            {/* <h2 className="homeHeading hmbar tagline">शासकीय मोजणी अर्जासाठी विश्वासार्ह सहाय्य</h2>
+                            <p className='fw-bold'>शेतजमीन | प्लॉट | वडिलोपार्जित जमीन</p>
                             <h5 className="homeHeading tagline">Online अर्ज • कागदपत्र मार्गदर्शन • Status सहाय्य</h5>
                             <small className='fw-bold'><span className='text-success'>✔</span> Citizen Assistance Service | <span className='text-success'>✔</span> Maharashtra Wide</small>
+                        </div> */}
+
+                        <div
+                        id="homeBrandCarousel"
+                        className="carousel slide brandWrap animated-label" //carousel slide brandWrap animated-label
+                        data-bs-ride="carousel"
+                        data-bs-interval="3000"
+                        >
+                        <div className="carousel-inner">
+
+                            {/* ===== SLIDE 1 : Aapli Mojani ===== */}
+                            <div className="carousel-item active">
+                                        <h1 className="homeHeading hmheadful hmbar">
+                                            <img className="mojaniLG" src={mojaniLG} alt="ApliMojani" />
+                                            <span className="MainHeading cstEngFont AapliMojaniText F60">
+                                            Aapli Mojani
+                                            </span>
+                                        </h1>
+
+                                        <h2 className="homeHeading hmbar tagline F40">
+                                            शासकीय मोजणी अर्जासाठी विश्वासार्ह सहाय्य
+                                        </h2>
+
+                                        <p className="fw-bold F25">
+                                            शेतजमीन | प्लॉट | वडिलोपार्जित जमीन
+                                        </p>
+
+                                        <h5 className="homeHeading tagline F20">
+                                            Online अर्ज • कागदपत्र मार्गदर्शन • Status सहाय्य
+                                        </h5>
+
+                                        <small className="fw-bold F15">
+                                            <span className="text-success">✔</span> Citizen Assistance Service |{" "}
+                                            <span className="text-success">✔</span> Maharashtra Wide
+                                        </small>
+                            </div>
+
+                            {/* ===== SLIDE 2 : PM Awas Yojana ===== */}
+                            {/* <div className="carousel-item">
+                                    <h1 className="MainHeading hmbar">
+                                         <img className="graminLG" src={graminLG} alt="ApliMojani" />
+                                        <span className="MainHeading cstEngFont AapliMojaniText F40">प्रधानमंत्री आवास योजना – तुमच्या स्वतःच्या घराचे स्वप्न आता साकार
+                                            </span>
+                                    </h1>
+
+                                    <p className="homeHeading hmbar tagline fw-bold F25">
+                                        ग्रामीण व शहरी लाभार्थ्यांसाठी अर्ज, पात्रता तपासणी व संपूर्ण मार्गदर्शन –
+                                        <br />
+                                        जलद आणि विश्वासार्ह सेवा
+                                    </p>
+
+                                    <h5 className="homeHeading fw-bold F20">
+                                        सरकारी अनुदान ₹1.20 लाख ते ₹2.50 लाख पर्यंत
+                                    </h5>
+
+                                    <small className="fw-bold F15">
+                                            <span className="text-success">✔</span> ग्रामीण व शहरी दोन्ही योजना उपलब्ध |{" "}
+                                            <span className="text-success">✔</span> अर्ज भरणे + डॉक्युमेंट चेक + फॉलोअप
+                                    </small>
+                            </div> */}
+
                         </div>
-                        <div className="btns">
-                            <button className="btn btn-success cstEngFont"><i className="fa-brands fa-whatsapp"></i> WhatsApp Apply करा</button>
-                            {/* <button className="btn btn-primary"><i className="fa-solid fa-envelope"></i> Online अर्ज करा</button> */}
-                            <button className="btn btn-dark cstEngFont"><i className="fa-solid fa-phone"></i> Call करा</button>
                         </div>
+
+
+                        <div className="row justify-content-center mt-3">
+                            <div className="col-12 col-md-10 col-lg-8">
+                                <div className="d-flex flex-column flex-md-row gap-2 justify-content-center m-4 m-md-0">
+                                    <button className="btn btn-success cstEngFont btn-sm px-4 fs-6">
+                                        <i className="fa-brands fa-whatsapp me-1 HmIconSize"></i>
+                                        WhatsApp करा
+                                    </button>
+                                    <a href="tel:7387484615" className="btn btn-light text-dark cstEngFont btn-sm px-4 fs-6">
+                                        <i className="fa-solid fa-phone me-1 HmIconSize"></i>
+                                        संपर्क करा
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* <div className="d-flex flex-column flex-sm-row gap-2 mt-3 justify-content-center m-4 m-md-0">
+                            <button className="btn btn-success cstEngFont btn-sm px-3 fs-6" onClick={handleWhatsApp}><i className="fa-brands fa-whatsapp me-1 HmIconSize"></i> WhatsApp करा</button>
+                            <a href="tel:7387484615" className="btn btn-light text-dark cstEngFont btn-sm px-3 fs-6"><i className="fa-solid fa-phone me-1 HmIconSize"></i> संपर्क करा</a>
+                        </div> */}
+
                     </div>
 
                 </div>

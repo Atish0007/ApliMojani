@@ -5,6 +5,10 @@
     background-repeat: no-repeat;
     min-height: 100vh;
     text-align: center;
+    border-bottom: 2px solid #1f7aa5;
+}
+.AapliMojaniText{
+  margin-left: -20px;
 }
 
 .brandWrap {
@@ -15,11 +19,17 @@
     color: #00409d;
     font-weight: 600;
 }
-.fulimg {
+.mojaniLG {
   height: 65px;
   /* transform: rotate(25deg); */
   margin-bottom: 5px;
 }
+.graminLG{
+  height: 60px;
+  transform: scale(2.5);
+  margin-right: 35px;
+}
+
 .hmheadful {
   display: flex;
   align-items: center;
@@ -54,10 +64,78 @@
 .blue {background:#1976d2;}
 .dark {background:#333;}
 
+.HmbtnW{
+     width: 0%;
+    padding: 5px !important;
+    margin: 0px !important;
+}
+.HmbtnS{
+      width: 0%;
+    padding: 5px !important;
+    margin: 0px !important;
+}
+.HmIconSize{
+  font-size: 15px;
+}
 
 @media (max-width: 768px) {
   .homeBG {
     background-position: 80% 50% !important;
   }
+  #homeBrandCarousel .carousel-inner {
+    min-height: 400px;   /* adjust if needed */
+  }
+  .graminLG {
+    height: 50px;
+    transform: scale(2);
+    margin-right: 25px;
+  }
+  .MainHeadingHM{
+    font-size: unset !important;
+  }
+ .F60{
+    font-size: 29px !important;
+  }
+  .F40{
+    font-size:unset !important;
+  }
+  .F25{
+    font-size:unset !important;
+  }
+  .F20{
+    font-size:unset !important;
+  }
+  .F15{
+    font-size:unset !important;
+  }
 }
  
+
+
+.F60{
+  font-size: 60px;
+}
+.F40{
+  font-size:40px;
+}
+.F25{
+  font-size:25px;
+}
+.F20{
+  font-size:20px;
+}
+.F15{
+  font-size:15px;
+}
+
+
+/* Crusl */
+
+/* Fix carousel height so buttons don't jump */
+#homeBrandCarousel .carousel-inner {
+    min-height: 300px;   /* adjust if needed */
+}
+
+#homeBrandCarousel .carousel-item {
+    min-height: 300px;
+}

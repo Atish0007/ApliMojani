@@ -1,0 +1,148 @@
+.split-section,
+.split-row {
+    min-height: 100vh;
+}
+
+.split-row {
+    min-height: 100vh;
+}
+
+.form-side {
+    min-height: 100vh;
+}
+
+
+.form-side {
+  /* background: linear-gradient(135deg, #f8f5ef, #ffffff);
+  height: 73vh; */
+  padding: 40px;
+}
+.image-side {
+    background-size: contain;      /* ✅ full image visible */
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-color: #f4f6fb;     /* prevents empty transparency */
+}
+
+
+/* Tablet */
+@media (max-width: 992px) {
+
+  .split-section,
+  .split-row,
+  .image-side,
+  .form-side {
+    min-height: auto;
+  }
+
+  .image-side {
+    height: 60vh;
+  }
+
+  .form-side {
+    padding: 30px;
+  }
+}
+/* Mobile */
+@media (max-width: 768px) {
+  .arjFullWidth{
+    padding: 0 !important;
+  }
+  .split-row {
+    flex-direction: column;
+  }
+
+  .image-side {
+    height: 50vh;
+  }
+
+  .form-side {
+    padding: 20px;
+  }
+
+  .banner-wrapper-box {
+    padding: 22px;
+  }
+}
+
+
+
+.contact-section {
+  background: #f4f6fb;
+}
+
+/* Card */
+.contact-card {
+  background: #ffffff;
+  width: 100%;
+    /* background: #ffffff00; */
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-top: 6px solid #0d6efd;
+  border-left: 2px solid #0d6efd;
+  border-right: 2px solid #0d6efd;
+  border-bottom: 6px solid #0d6efd;
+}
+
+/* Title */
+.contact-title {
+  font-weight: 700;
+  color: #0d2c6c;
+}
+
+/* Inputs */
+.custom-input {
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+textarea.custom-input {
+  height: auto;
+}
+
+.custom-input:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 6px rgba(13,110,253,0.25);
+}
+
+/* Buttons */
+.whatsapp-btn {
+  background: linear-gradient(90deg, #25D366, #128C7E);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  height: 48px;
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37,211,102,0.3);
+}
+
+.call-btn {
+  background: linear-gradient(90deg, #ff9800, #f57c00);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  height: 48px;
+}
+
+.call-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255,152,0,0.3);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .contact-card {
+    padding: 25px;
+  }
+
+  .contact-title {
+    font-size: 22px;
+  }
+}

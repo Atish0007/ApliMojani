@@ -1,0 +1,71 @@
+.why-section {
+  background: #f3f5fa;
+}
+
+/* Card */
+.why-card {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eaeaea;
+}
+
+/* Title */
+.why-title {
+  font-weight: 700;
+  color: #1F3F6E;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+/* Optional underline
+.why-title::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background: #f1c232;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 10px;
+} */
+
+/* Item */
+.why-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Icon */
+.why-item i {
+  color: #28a745;
+  font-size: 18px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .why-card {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-title {
+    font-size: 20px;
+  }
+
+  .why-item {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .why-card {
+    padding: 20px;
+  }
+}

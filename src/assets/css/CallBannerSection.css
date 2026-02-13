@@ -1,0 +1,126 @@
+.official-call-section {
+  background: #f3f5fa;
+}
+
+/* Main Card */
+.official-card {
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  border: 2px solid #e6e6e6;
+}
+
+/* Top Announcement Strip */
+.official-top-strip {
+  background: linear-gradient(90deg, #f8d96b, #f1c232);
+  font-weight: 700;
+  padding: 12px;
+  font-size: 15px;
+  color: #1F3F6E;
+  border-bottom: 2px solid #e6b800;
+}
+
+/* Body */
+.official-body {
+  padding: 30px 25px;
+}
+
+/* Call Text */
+.call-heading {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #1b2a4e;
+}
+
+.call-number {
+  font-size: 42px;
+  font-weight: 800;
+  color: #0d2c6c;
+  margin: 5px 0 5px;
+}
+
+/* Divider */
+.divider-line {
+  width: 80px;
+  height: 3px;
+  background: #f1c232;
+  margin: 0 auto 15px;
+  border-radius: 10px;
+}
+
+/* Subtitle */
+.service-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.whatsapp-btn {
+  background: #1fa855;
+  color: #fff;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  border: none;
+}
+
+.whatsapp-btn:hover {
+  background: #168a45;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(31, 168, 85, 0.3);
+}
+
+.call-btn {
+  background: #f57c00;
+  color: #fff;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  border: none;
+}
+
+.call-btn:hover {
+  background: #e65100;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(245, 124, 0, 0.3);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+  .call-number {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .official-body {
+    padding: 25px 20px;
+  }
+
+  .call-number {
+    font-size: 28px;
+  }
+
+  .official-top-strip {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .call-number {
+    font-size: 24px;
+  }
+
+  .service-text {
+    font-size: 13px;
+  }
+}

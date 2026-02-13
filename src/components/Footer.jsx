@@ -3,10 +3,11 @@ import "../assets/css/footer.css";
 function Footer() {
 
     const data = [
-        {title:"कॉल करा",subtitle:"800789123545",icon:"fas fa-phone-alt strip-icon ftrPhone"},
-        {title:"WhatsApp",subtitle:"WhatsApp वर चॅट करा",icon:"fab fa-whatsapp strip-icon whatsapp"},
-        {title:"ऑफिसचा पत्ता",subtitle:"गट क्रमांक, नेवासा, नाशिक",icon:"fas fa-map-marker-alt strip-icon ftrMap"},
-        {title:"अर्ज फॉर्म भरायचा?",subtitle:"मदत मिळवा",icon:"fas fa-file strip-icon ftrForm"},
+        {title:"कॉल करा",subtitle:"7387484615",icon:"fas fa-phone strip-icon ftrPhone"},
+        // {title:"WhatsApp",subtitle:"WhatsApp वर चॅट करा",icon:"fab fa-whatsapp strip-icon whatsapp"},
+        {title:"Email",subtitle:"aarjamitra@gmail.com",icon:"fa fa-envelope strip-icon whatsapp"},
+        {title:"ऑफिसचा पत्ता",subtitle:"Aapla aarj Office no. 1, Yashodhan Building, Karve Nagar, Pune, Maharashtra – 411052",icon:"fas fa-map-marker-alt strip-icon ftrMap"},
+        {title:"Working Hours",subtitle:"Mon–Sat: 10 AM – 7 PM",icon:"fas fa-clock strip-icon ftrForm"},
     ]
 
 
@@ -17,12 +18,13 @@ function Footer() {
 
 
                 {data.map((item,i)=>(
-                    <div className="col-12 col-md-3" key={i}>
+                    <div className=" col-md-3 col-sm-6" key={i}>
                          <div className="strip-item">
                             <span className="footerIcon"><i className={item.icon}></i></span>
                             <div>
-                                <h6>{item.title}</h6>
-                                <p>{item.subtitle}</p>
+                                <h6 className={i==0||data.length-2==i?"":"cstEngFont"}>{item.title}</h6>
+                                <p className="cstEngFont">{item.subtitle}</p>
+                                {/* {data.length-2==i || data.length-1==i ?"cstEngFont":""} */}
                             </div>
                         </div>
                     </div>
