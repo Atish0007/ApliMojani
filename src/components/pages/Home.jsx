@@ -1,8 +1,20 @@
+import { useEffect } from "react";
+import { Carousel } from "bootstrap";
 import '../../assets/css/home.css';
 import mojaniLG from "../../assets/images/mojniLG.PNG";
 import graminLG from "../../assets/images/graminLG.png"
 
 function Home(){
+
+    useEffect(() => {
+        const el = document.getElementById("homeBrandCarousel");
+        if (el) {
+            new Carousel(el, {
+            interval: 3000,
+            ride: "carousel",
+            });
+        }
+    }, []);
 
     const handleWhatsApp = () => {
 
@@ -19,18 +31,6 @@ function Home(){
             <div className="container">
                 <div className="row justify-content-start">
                     <div className="col-md-8 col-sm-6 text-center p-0">
-                        
-                        {/* <div className="brandWrap animated-label">
-                            <h1 className="homeHeading hmheadful hmbar">
-                                <img className="fulimg" src={mojaniLG} alt="ApliMojani" />
-                                <span className='MainHeading cstEngFont AapliMojaniText'>Aapli Mojani</span>
-                            </h1>
-                            {/* <h1 className="homeHeading"><img src={ful} className="fulimg" alt="ApliMojani" height="60px" /> Apli Mojani</h1> */}
-                            {/* <h2 className="homeHeading hmbar tagline">शासकीय मोजणी अर्जासाठी विश्वासार्ह सहाय्य</h2>
-                            <p className='fw-bold'>शेतजमीन | प्लॉट | वडिलोपार्जित जमीन</p>
-                            <h5 className="homeHeading tagline">Online अर्ज • कागदपत्र मार्गदर्शन • Status सहाय्य</h5>
-                            <small className='fw-bold'><span className='text-success'>✔</span> Citizen Assistance Service | <span className='text-success'>✔</span> Maharashtra Wide</small>
-                        </div> */}
 
                         <div
                         id="homeBrandCarousel"
@@ -98,7 +98,7 @@ function Home(){
                         <div className="row justify-content-center mt-3 d-none d-sm-block">
                             <div className="col-12 col-md-10 col-lg-8">
                                 <div className="d-flex flex-column flex-md-row gap-2 justify-content-center m-4 m-md-0">
-                                    <button className="btn btn-success cstEngFont btn-sm px-4 fs-6">
+                                    <button className="btn btn-success cstEngFont btn-sm px-4 fs-6" onClick={handleWhatsApp}>
                                         <i className="fa-brands fa-whatsapp me-1 HmIconSize"></i>
                                         WhatsApp करा
                                     </button>

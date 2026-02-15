@@ -3,6 +3,9 @@ import { useState, useEffect, useRef } from "react";
 import apli_mojaniLogo from "../assets/images/apli_mojaniLogo.png";
 import "../assets/css/header.css";
 import Offcanvas from "bootstrap/js/dist/offcanvas";
+//import Collapse from "bootstrap/js/dist/collapse";
+import Collapse from "bootstrap/js/dist/collapse";
+
 
 
 function Header() {
@@ -49,35 +52,39 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY, hasTriggered]);
 
+//toggler btn
+const collapseInstance = useRef(null);
 
-  useEffect(() => {
-  const togglers = document.querySelectorAll(".custom-toggler");
+useEffect(() => {
+  const collapseEl = document.getElementById("navbarNav");
+  const toggler = document.querySelector(".navbar-toggler.d-lg-none");
 
-  togglers.forEach((btn) => {
-    const targetSelector = btn.getAttribute("data-bs-target");
-    const targetEl = document.querySelector(targetSelector);
+  if (!collapseEl || !toggler) return;
 
-    if (!targetEl) return;
-
-    // When menu opens
-    targetEl.addEventListener("shown.bs.collapse", () => {
-      btn.classList.add("active");
-    });
-
-    targetEl.addEventListener("shown.bs.offcanvas", () => {
-      btn.classList.add("active");
-    });
-
-    // When menu closes
-    targetEl.addEventListener("hidden.bs.collapse", () => {
-      btn.classList.remove("active");
-    });
-
-    targetEl.addEventListener("hidden.bs.offcanvas", () => {
-      btn.classList.remove("active");
-    });
+  // Create Bootstrap Collapse instance
+  collapseInstance.current = new Collapse(collapseEl, {
+    toggle: false,
   });
+
+  const handleShown = () => {
+    toggler.classList.add("active");
+    toggler.setAttribute("aria-expanded", "true");
+  };
+
+  const handleHidden = () => {
+    toggler.classList.remove("active");
+    toggler.setAttribute("aria-expanded", "false");
+  };
+
+  collapseEl.addEventListener("shown.bs.collapse", handleShown);
+  collapseEl.addEventListener("hidden.bs.collapse", handleHidden);
+
+  return () => {
+    collapseEl.removeEventListener("shown.bs.collapse", handleShown);
+    collapseEl.removeEventListener("hidden.bs.collapse", handleHidden);
+  };
 }, []);
+
 
 
 /* ================= Init Offcanvas ONCE ================= */
@@ -109,6 +116,14 @@ function Header() {
     offcanvasInstance.current?.hide();
   };
 
+useEffect(() => {
+  // Close mobile collapse properly
+  collapseInstance.current?.hide();
+
+  // Close desktop sidebar
+  offcanvasInstance.current?.hide();
+
+}, [location]);
 
 
   return (
@@ -134,7 +149,7 @@ function Header() {
         </button>
 
           {/* MOBILE TOGGLER (UNCHANGED) */}
-          <button
+          {/* <button
             className="navbar-toggler custom-toggler d-lg-none"
             type="button"
             data-bs-toggle="collapse"
@@ -147,7 +162,22 @@ function Header() {
                     <span></span>
                     <span></span>
                 </div>
-          </button>
+          </button> */}
+          <button
+  className="navbar-toggler custom-toggler d-lg-none"
+  type="button"
+  aria-controls="navbarNav"
+  aria-expanded="false"
+  aria-label="Toggle navigation"
+  onClick={() => collapseInstance.current?.toggle()}
+>
+  <div className="toggler-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</button>
+
 
           {/* DESKTOP TOGGLER (NEW) */}
           <button

@@ -109,7 +109,7 @@
 /* Mobile */
 @media (max-width: 767px){
   .quick-form-card{
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 @media (max-width: 576px) {

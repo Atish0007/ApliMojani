@@ -40,7 +40,7 @@ function Process() {
                 <div className="row justify-content-center">
                     <div className="col-12">
                         <h1 className="MainHeading text-center pt-1 pt-md-4">कार्य कसे चालते</h1>
-                        <div className="bar">
+                        <div className="bar mb-3 mb-md-3">
                             <div className="bar-fill"></div>
                         </div>
 

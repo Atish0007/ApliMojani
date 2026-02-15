@@ -69,7 +69,7 @@ export default function QuickFormSection() {
 
 
     return (
-        <section className="quick-form-section py-5">
+        <section className="quick-form-section py-5 pt-4 pt-md-0 pb-4">
             <div className="container">
                 <div className="row justify-content-center">
 
@@ -95,7 +95,7 @@ export default function QuickFormSection() {
                                 ))}
                             </ul>
 
-                            <div className="border rounded-3 p-2 mt-3 bg-light shadow-sm">
+                            <div className="border rounded-3 p-2 mt-5 bg-light shadow-sm">
                                 <div className="d-flex align-items-center justify-content-center justify-content-md-start text-center text-md-start">
                                     <img
                                         src={shield}
@@ -142,13 +142,13 @@ export default function QuickFormSection() {
                                 </div>
 
                                 <button type="button" 
-                                        className="btn whatsapp-btn w-100 fs-6"
+                                        className="btn whatsapp-btn w-100 fs-5"
                                         onClick={handleWhatsApp}>
-                                    <i className="fab fa-whatsapp  me-2"></i>
+                                    <i className="fab fa-whatsapp fs-4 me-2"></i>
                                     WhatsApp वर अर्ज पाठवा
                                 </button>
                                 <button type="button"
-                                        className="btn call-btn w-100 mt-2 fs-6"
+                                        className="btn call-btn w-100 mt-2 fs-5"
                                         onClick={handleCall}>
                                     <i className="fa-solid fa-phone me-1 fs-5 HmIconSize"></i> कॉल करा</button>
                             </form>

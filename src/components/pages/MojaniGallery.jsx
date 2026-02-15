@@ -55,10 +55,10 @@ export default function MojaniGallery() {
     groupedImages.push(images.slice(i, i + itemsPerSlide));
   }
   return (
-    <section className="responsive-gallery py-4">
+    <section className="responsive-gallery py-3 pt-3">
       <Container>
         <h3 className="MainHeading cstEngFont text-center">मोजणी फोटो</h3>
-        <div className="bar">
+        <div className="bar mb-4 mb-md-3">
             <div className="bar-fill"></div>
         </div>
 

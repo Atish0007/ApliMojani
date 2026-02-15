@@ -17,23 +17,23 @@ function ArjForm() {
 
         <section className="cstmBG">
 
-            <h1 className="MainHeading text-center pt-4">सेवा माहिती व उपलब्धता</h1>
-                        <div className="bar bar mb-5 mb-md-0">
+            <h1 className="MainHeading text-center arj-heading">सेवा माहिती व उपलब्धता</h1>
+                        <div className="bar mb-4 mb-md-3">
                             <div className="bar-fill"></div>
                         </div>
-                <div className="split-section">
-                    <div className="container-fluid arjFullWidth">
-                        <div className="row g-0 align-items-stretch split-row">
+                <div className="arj-split-section">
+                    <div className="container-fluid p-0 arjFullWidth">
+                        <div className="row g-0 align-items-center">
 
                             {/* LEFT IMAGE */}
-                            <div className="col-lg-6 image-side"
+                            <div className="col-lg-6 arj-image-side mt-0"
                                 style={{ backgroundImage: `url(${bannerImg})` }}
                             ></div>
 
                             {/* RIGHT SIDE BOX */}
-                            <div className="col-lg-6 form-side d-flex align-items-center justify-content-center">
+                            <div className="col-lg-6 arj-form-side d-flex align-items-center justify-content-center mt-0">
 
-                                <div className="banner-wrapper-box">
+                                <div className="banner-wrapper-box mt-2 mt-md-0">
 
                                     <div className="info-header fs-3">
                                         🔶 पुणे जिल्ह्यात सेवा सुरू आहे!
